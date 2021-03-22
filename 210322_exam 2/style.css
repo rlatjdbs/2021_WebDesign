@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0; font-size: 20px; color: #fff;}
+a{margin: 0px auto; color: #333;}
+li{list-style: none;}
+table{border-spacing: 0;}
+.clearfix::before,.clearfix::after {display: block; content: ''; clear: both;}
+
+#all{width: 1200px; margin: 0px auto;}
+
+#top {text-align: center;}
+#top .logo {float: left; width: 200px; height: 100px; line-height: 100px; background: #999;}
+#top .menu {float: right; width: 1000px; height: 100px; line-height: 100px; background: #888;}
+
+#banner{text-align: center; height: 400px; line-height: 400px; background: #777;}
+
+#contents {text-align: center;}
+#contents > div {float: left; width: 33.333333%;}
+#contents .cont1 {background: #666; height: 247px;}
+#contents .cont2 {background: #555; height: 247px; line-height: 247px;}
+#contents .cont3 {background: #444; height: 247px; line-height: 247px;}
+
+.tab {padding: 10px;}
+.tab .nn {}
+.tab .nn ul {overflow: hidden;}
+.tab .nn li {float: left; width: 160px; background: #333; text-align: center; margin-right: -1px;}
+.tab .nn li.active {text-decoration: underline;}
+.tab .nn li a{padding: 10px; display: block; color: #fff;}
+.tab .cont {padding: 20px; background: #222; text-align: left;}
+
+#footer {height: 100px; line-height: 100px; background: #111; text-align: center;}
+#footer .foot1 {float: left; width: 200px; background: #909;}
+#footer .foot2 {float: left; width: 800px; background: #910;}
+#footer .foot3 {float: left; width: 200px; background: #913;}

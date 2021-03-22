@@ -1,0 +1,51 @@
+*{margin: 0; padding: 0; font-size: 20px; color: #fff;}
+a{margin: 0px auto; color: #333;}
+li{list-style: none;}
+table{border-spacing: 0;}
+.clearfix::before,.clearfix::after {display: block; content: ''; clear: both;}
+
+#all{width: 1000px; height: 1000px; margin: 0 auto;}
+
+#top{height: 100px;}
+#top h1 {float: left; padding-top: 5px;}
+#top h1 img {width: 130px;}
+#top .nav {float: right; z-index: 100; position: relative; margin-top: 20px;}
+#top .nav li{position: relative; float: left; width: 120px; text-align: center;}
+#top .nav li a{display: block; padding: 20px 15px; background: #ccc;}
+#top .nav li a:hover{background: #ddd;}
+#top .nav li ul.submenu {display: none; position: absolute; left: 0; top: 59px; background: #ddd;}
+#top .nav li ul.submenu li a {padding: 10px;}
+#top .nav li ul.submenu li a:hover {background: #999;}
+
+#banner{width: 1000px; height: 378px; overflow: hidden;}
+#banner img{width: 100%;}
+.slideList {position: relative;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%); background: rgba(0,0,0,0.5);
+    padding: 10px 30px; border-radius: 25px; color: #fff;}
+.slideList .slideImg img {display: block;}
+
+#content1 {margin-top: 15px;}
+#content1 .notice {float: left; width: 49%; height: 220px; margin-right: 2%;
+    border: 1px solid #ccc; box-sizing: border-box;}
+#content1 .ad {float: left; width: 49%; margin-right: 0;}
+#content1 .ad img {width: 100%; display: block;}
+
+.notice{position: relative; padding: 30px;}
+.notice ul li {float: left; margin-right: 20px;}
+.notice ul li a {font-size: 24px; color: #999; font-weight: bold;}
+.notice ul li a.active a {color: #000;}
+.notice ul li ul {position: absolute; left: 30px; top: 70px;}
+.notice ul li ul li a {float: left; width: 60%; font-size: 16px; color: #333;
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: #333;
+}
+.notice ul li ul li span {float: right; width: 20%;}
+.notice .more {position: absolute; right: 30px; top: 35px;}
+
+#contents {margin-top: 25px;}
+#contents h2 {margin-bottom: 10px;}
+#contents li {float: left; width: 24.25%; margin-right: 1%;}
+#contents li:last-child {margin-right: 0;}
+#contents li span 

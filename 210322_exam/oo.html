@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="yy.css">
+</head>
+<body>
+    <div id="all">
+        <div id="top" class="clearfix">
+            <div class="logo">
+                <h2>로고</h2>
+            </div>
+            <div class="menu">
+                <h2>메뉴</h2>
+            </div>
+        </div>
+        <div id="banner">
+            <h2>이미지가 3초에 한번씩 위아래로 전환되는 효과</h2>
+            <div class="slide">
+                <div class="slideimg"><img src="link.jpg" alt="이미지 설명"></div>
+                <div class="slideimg"><img src="vosxja.jpg" alt="이미지 설명"></div>
+                <div class="slideimg"><img src="ahsxpzmfltmxh.jpg" alt="이미지 설명"></div>
+            </div>
+        </div>
+        <section id="contents" class="clearfix">
+            <div class="cont1">
+                <h2>공지사항</h2>
+            </div>
+            <div class="cont2">
+                <h2>갤러리</h2>
+            </div>
+            <div class="cont3">
+                <h2>팝업</h2>
+            </div>
+        </section>
+        <footer id="footer">
+            <footer class="foot1">
+                <h2>로고</h2>
+            </footer>
+            <footer class="foot2">
+                <h2>Copyright</h2>
+            </footer>
+            <footer class="foot3">
+                <h2>SNS</h2>
+            </footer>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        var currentIndex = 0;
+
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            }else{
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-360)+"px";
+
+            $(".slide").animate({ top : slidePosition},400);
+        },3000);
+    </script>
+</body>
+</html>
